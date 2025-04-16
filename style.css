@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.main-container {
+    height: 100%;
+}
+
+.sidebarContainer {
+    height: 100vh;
+    width: 18em;
+    font-family: Roboto;
+    color: white;
+    padding: 15px;
+    background-color: rgba(10, 76, 197, 0.472);
+}
+
+.sidebarNav > li,
+.sidebarEssentials > li {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 5px;
+    list-style: none;
+    color: white;
+}
+
+li > img {
+    filter: brightness(0) invert(1);
+    color: white;
+    width: 25px;
+    height: 25px;
+    margin-right: 1em;
+}
+
+.dashGrid > img {
+    filter: brightness(0) invert(1);
+    color: white;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+.dashGrid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.navGrid > .sidebarNav,
+.navGrid > .sidebarEssentials {
+    padding-left: 10px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 15px;
+}
+
+
+
+.navGrid {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
