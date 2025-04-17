@@ -8,12 +8,17 @@
 
 body,
 html {
+
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
 
 .main-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    background-color: rgb(232, 232, 232);
     height: 100%;
 }
 
@@ -39,8 +44,8 @@ html {
 li > img {
     filter: brightness(0) invert(1);
     color: white;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     margin-right: 1em;
 }
 
@@ -53,7 +58,7 @@ li > img {
 }
 
 a {
-    font-size: 18px;
+    font-size: 21px;
     font-weight: 400;
     text-decoration: none;
     color: white;
@@ -66,10 +71,10 @@ a {
     padding-bottom: 40px;
 }
 
-.navGrid > .sidebarNav,
-.navGrid > .sidebarEssentials {
+.sidebarNav,
+.sidebarEssentials {
     padding-left: 10px;
-    padding-bottom: 100px;
+    padding-bottom: 90px;
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 15px;
@@ -82,4 +87,86 @@ a {
     flex-direction: column;
     height: 100%;
     justify-content: space-between;
+}
+
+.headerContainer {
+    max-height: 20vh;
+    width: 100%;
+    padding: 22px 40px 25px 40px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.upperHeader,
+.lowerHeader {
+    max-height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+}
+
+.searchHeader > img,
+.profileHeader-upper > img {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+
+}
+
+.profileHeader-upper > h3 {
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.searchHeader > input {
+    height: 35px;
+    width: 100%;
+    border-radius: 15px;
+    padding-left: 15px;
+    width: 100%;
+    border: none;
+    background-color: rgba(134, 134, 134, 0.281);
+    font-size: 20px;
+}
+
+.searchHeader > input::placeholder {
+    color: white;
+    font-size: 17px;
+}
+
+.searchHeader,
+.profileHeader-upper {
+    display: flex;
+    align-items: center;
+}
+
+.searchHeader {
+    display: flex;
+    flex: 1;
+    max-width: 50%;
+}
+
+.profileHeader-upper > h3 {
+    margin-top: 2px;
+}
+
+.profileHeader-lower > img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+.profileHeader-lower {
+    align-items: end;
+    display: flex;
+    align-items: center;
+}
+
+.profileHeader-lower-text {
+    font-family: Roboto;
 }
