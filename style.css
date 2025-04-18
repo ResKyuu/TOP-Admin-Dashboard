@@ -18,11 +18,15 @@ html {
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: auto 1fr;
+    grid-template-areas: 
+        "sidebar header"
+        "sidebar content";
     background-color: rgb(232, 232, 232);
     height: 100%;
 }
 
 .sidebarContainer {
+    grid-area: sidebar;
     height: 100vh;
     width: 18em;
     font-family: Roboto;
@@ -90,6 +94,7 @@ a {
 }
 
 .headerContainer {
+    grid-area: header;
     max-height: 20vh;
     width: 100%;
     padding: 22px 40px 25px 40px;
@@ -97,6 +102,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.348);
 }
 
 .upperHeader,
@@ -145,6 +151,10 @@ a {
     align-items: center;
 }
 
+.upperHeader {
+    margin-bottom: 32px;
+}
+
 .searchHeader {
     display: flex;
     flex: 1;
@@ -169,4 +179,87 @@ a {
 
 .profileHeader-lower-text {
     font-family: Roboto;
+}
+
+.buttonsHeader {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.buttonsHeader > button {
+    background-color: rgba(10, 76, 197, 0.472);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: Roboto;
+}
+
+.mainCard-container {
+    grid-area: content;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.projectCards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 60%;
+    max-width: 70%;
+    
+}
+
+.projectCard {
+    width: 100%;
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.348);
+}
+
+.cardIcons > img {
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+}
+
+.cardIcons {
+    display: flex;
+    gap: 5px;
+    justify-content: end;
+    align-items: end;
+}
+
+.cardTitle {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.cardText {
+    display: flex;
+    flex-direction: column;
+    max-height: 390px;
+    overflow: hidden;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+
+.cardText > h3 {
+    margin-bottom: 5px;
 }
