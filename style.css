@@ -1,309 +1,326 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body,
 html {
-
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .main-container {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto 1fr;
-    grid-template-areas: 
-        "sidebar header"
-        "sidebar content";
-    background-color: rgb(232, 232, 232);
-    height: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar content";
+  background-color: rgb(232, 232, 232);
+  height: 100%;
 }
 
 .sidebarContainer {
-    grid-area: sidebar;
-    height: 100vh;
-    width: 18em;
-    font-family: Roboto;
-    color: white;
-    padding: 15px;
-    background-color: rgba(10, 76, 197, 0.472);
+  grid-area: sidebar;
+  height: 100vh;
+  width: 18em;
+  font-family: Roboto;
+  color: white;
+  padding: 15px;
+  background-color: rgba(10, 76, 197, 0.472);
 }
 
 .sidebarNav > li,
 .sidebarEssentials > li {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    gap: 5px;
-    list-style: none;
-    color: white;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 5px;
+  list-style: none;
+  color: white;
 }
 
 li > img {
-    filter: brightness(0) invert(1);
-    color: white;
-    width: 30px;
-    height: 30px;
-    margin-right: 1em;
+  filter: brightness(0) invert(1);
+  color: white;
+  width: 30px;
+  height: 30px;
+  margin-right: 1em;
 }
 
 .dashGrid > img {
-    filter: brightness(0) invert(1);
-    color: white;
-    width: 50px;
-    height: 50px;
-    margin-right: 15px;
+  filter: brightness(0) invert(1);
+  color: white;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
 }
 
 a {
-    font-size: 21px;
-    font-weight: 400;
-    text-decoration: none;
-    color: white;
+  font-size: 21px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
 }
 
 .dashGrid {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding-bottom: 40px;
 }
 
 .sidebarNav,
 .sidebarEssentials {
-    padding-left: 10px;
-    padding-bottom: 90px;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 15px;
+  padding-left: 10px;
+  padding-bottom: 90px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 15px;
 }
 
-
-
 .navGrid {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
 }
 
 .headerContainer {
-    grid-area: header;
-    max-height: 20vh;
-    width: 100%;
-    padding: 22px 40px 25px 40px;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.348);
+  grid-area: header;
+  max-height: 20vh;
+  width: 100%;
+  padding: 22px 40px 25px 40px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.348);
 }
 
 .upperHeader,
 .lowerHeader {
-    max-height: 20vh;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    top: 0;
+  max-height: 20vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
 }
 
 .searchHeader > img,
 .profileHeader-upper > img {
-    width: 30px;
-    height: 30px;
-    margin-right: 20px;
-
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
 }
 
 .profileHeader-upper > h3 {
-    font-family: Roboto;
-    font-size: 25px;
-    font-weight: 800;
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: 800;
 }
 
 .searchHeader > input {
-    height: 35px;
-    width: 100%;
-    border-radius: 15px;
-    padding-left: 15px;
-    width: 100%;
-    border: none;
-    background-color: rgba(134, 134, 134, 0.281);
-    font-size: 20px;
+  height: 35px;
+  width: 100%;
+  border-radius: 15px;
+  padding-left: 15px;
+  width: 100%;
+  border: none;
+  background-color: rgba(134, 134, 134, 0.281);
+  font-size: 20px;
 }
 
 .searchHeader > input::placeholder {
-    color: white;
-    font-size: 17px;
+  color: white;
+  font-size: 17px;
 }
 
 .searchHeader,
 .profileHeader-upper {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .upperHeader {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .searchHeader {
-    display: flex;
-    flex: 1;
-    max-width: 50%;
+  display: flex;
+  flex: 1;
+  max-width: 50%;
 }
 
 .profileHeader-upper > h3 {
-    margin-top: 2px;
+  margin-top: 2px;
 }
 
 .profileHeader-lower > img {
-    width: 60px;
-    height: 60px;
-    margin-right: 20px;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
 }
 
 .profileHeader-lower {
-    align-items: end;
-    display: flex;
-    align-items: center;
+  align-items: end;
+  display: flex;
+  align-items: center;
 }
 
 .profileHeader-lower-text {
-    font-family: Roboto;
+  font-family: Roboto;
 }
 
 .buttonsHeader {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 .buttonsHeader > button {
-    background-color: rgba(10, 76, 197, 0.472);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 15px;
-    font-size: 15px;
-    font-weight: 600;
-    font-family: Roboto;
+  background-color: rgba(10, 76, 197, 0.472);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: Roboto;
 }
 
 .mainCard-container {
-    grid-area: content;
-    padding: 20px;
-    overflow-y: auto;
+  grid-area: content;
+  padding: 20px;
+  overflow-y: auto;
 }
 
 .projectCards {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(200px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 25px;
-    max-width: 100%;
-    
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  max-width: 100%;
 }
 
 .projectCard {
-    width: 100%;
-    height: 15em;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: space-between;
-    background-color: white;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.348);
+  width: 100%;
+  height: 15em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.348);
 }
 
 .cardIcons > img {
-    width: 25px;
-    height: 25px;
-    margin-right: 20px;
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
 }
 
 .cardIcons {
-    display: flex;
-    gap: 5px;
-    justify-content: end;
-    align-items: end;
+  display: flex;
+  gap: 5px;
+  justify-content: end;
+  align-items: end;
 }
 
 .cardTitle {
-    display: flex;
-    justify-content: space-between;
-    font-family: Roboto;
-    font-size: 20px;
-    font-weight: 800;
-    margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 5px;
 }
 
 .cardText {
-    display: flex;
-    flex-direction: column;
-    max-height: 390px;
-    overflow: hidden;
-    font-family: Roboto;
-    font-size: 15px;
-    font-weight: 400;
-    color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  max-height: 390px;
+  overflow: hidden;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
 }
 
 .cardText > h3 {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .announcementCard {
-    justify-self: end;
-    overflow: auto;
-    background-color: white;
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.348);
-    height: 33%;
-    width: 50%;
+  justify-self: end;
+  overflow: auto;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.348);
+  height: 33%;
+  width: 50%;
+}
+
+.announcementCard::-webkit-scrollbar,
+.mainCard-container::-webkit-scrollbar {
+  scrollbar-width: thin;
+  scroll-padding-right: 30px;
+  scroll-behavior: smooth;
+  width: 7px;
+}
+
+.announcementCard::-webkit-scrollbar-track,
+.mainCard-container::-webkit-scrollbar-track {
+  margin: 6px 0;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.announcementCard::-webkit-scrollbar-thumb,
+.mainCard-container::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.726);
+  min-height: 10px;
+  max-height: 30px;
 }
 
 .announcement-item {
-    padding: 15px 0;
+  padding: 15px 0;
 }
 
 .announcement-item:not(:last-child) {
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
 }
 
 .announcement-item h3 {
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 700;
-    margin-bottom: 5px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
 }
 
 .announcement-item p {
-    font-family: Roboto;
-    font-size: 12px;
-    color: #666;
-    line-height: 1.4;
+  font-family: Roboto;
+  font-size: 12px;
+  color: #666;
+  line-height: 1.4;
 }
 
 .cardContainer {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(200px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 25px;
-    justify-content: end;
-    align-items: start;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  justify-content: end;
+  align-items: start;
 }
